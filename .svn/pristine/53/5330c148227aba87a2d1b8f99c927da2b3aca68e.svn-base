@@ -1,0 +1,30 @@
+package nl.prowareness.automation.selenium.tests;
+
+import nl.prowareness.automation.selenium.exceptions.AutomationDriverException;
+import nl.prowareness.automation.selenium.exceptions.AutomationElementNotFoundException;
+import nl.prowareness.automation.selenium.testsetup.TestConfig;
+import nl.prowareness.automation.selenium.testsetup.TestPageClass;
+import nl.prowareness.automation.selenium.webdriver.SeleniumWebDriver;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes={TestConfig.class})
+public class PageTest {
+	@Autowired
+	SeleniumWebDriver driver;
+	@Autowired
+	TestPageClass tp;
+	
+	@Test
+	public void test() throws AutomationElementNotFoundException, AutomationDriverException{
+		driver.connect("http://google.com");
+		driver.disconnect();
+		
+	}
+
+}

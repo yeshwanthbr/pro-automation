@@ -1,0 +1,17 @@
+package nl.prowareness.automation.selenium.testsetup;
+
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+
+@Configuration
+@PropertySource({"webtest_environment.properties"})
+@ComponentScan(basePackages={"com.kramp.automation.framework.selenium.testsetup","com.kramp.automation.framework.selenium.webdriver", "com.kramp.automation.framework.selenium.pageinitializers", "com.kramp.automation.webshop.cucumber.common"})
+
+public class TestConfig {
+
+
+}
+

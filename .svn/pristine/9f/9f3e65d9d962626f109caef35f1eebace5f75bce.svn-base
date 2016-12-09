@@ -1,0 +1,12 @@
+
+#Selenium WebDriver Properties
+####################################################################################
+selenium.remoteUrl=
+selenium.browser=FIREFOX
+selenium.operatingSystem=
+selenium.implicitWait=10
+
+#Application Specific Waits
+####################################################################################
+wait.onLogin=15
+wait.onElementVisibility = 15

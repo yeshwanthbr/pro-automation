@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objectRepository>
+		<page name="File1Page1">
+				<field name="field1" findByValue="field1Value" findBy="id" />
+				<field name="password" findBy="id" findByValue="pwdinhoud1"/>
+				<field name="login" findByValue="Opslaanknop" findBy="id" />
+		</page>
+		<page name="logon">
+				<field name="loginIcon" findBy="name" findByValue="q"/>
+				<field name="username" findByValue="username" findBy="id" />
+				<field name="username" findByValue="username" findBy="id" />
+				<field name="username" findByValue="username" findBy="id" />
+		</page>
+		
+		<page name="TestPageClass">
+				<field name="testButton" findByValue="username" findBy="id" />
+				<field name="test2" findByValue="username" findBy="xpath" />
+				<field name="loginIcon" findByValue="username" findBy="xpath" />
+		</page>
+</objectRepository>

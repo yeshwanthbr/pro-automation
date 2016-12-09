@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objectRepository>
+		<page name="File1Page2">
+				<field name="field2" findByValue="field2Value" findBy="xpath" />
+				<field name="password" findBy="id" findByValue="pwdinhoud1"/>
+				<field name="login" findByValue="Opslaanknop" findBy="id" />
+		</page>
+		<page name="ABC">
+				<field name="username" findByValue="username" findBy="id" />
+				<field name="username" findByValue="username" findBy="id" />
+				<field name="username" findByValue="username" findBy="id" />
+				<field name="username" findByValue="username" findBy="id" />
+		</page>
+</objectRepository>

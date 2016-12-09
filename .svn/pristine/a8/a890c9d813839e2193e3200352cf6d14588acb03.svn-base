@@ -1,0 +1,18 @@
+package nl.prowareness.automation.selenium.config;
+
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+/**
+ * Loads all related objects into spring context
+ *
+ */
+
+@PropertySource({"classpath:SeleniumConfig.properties"})
+@Configuration
+@ComponentScan(basePackages={"nl.prowareness.automation.selenium.webdriver","nl.prowareness.automation.selenium.webanalytics"})
+public interface UIDriverContextConfiguration {
+
+}
