@@ -220,6 +220,7 @@ public class SeleniumWebDriver {
 	public void setUpBrowser(WebDriver driver) throws AutomationDriverException{
 		initializeScreenShot();
 		nativeWebDriver.set(driver);
+		activeDrivers.add(nativeWebDriver.get());
 		try {
 			setImplicitWait(Integer.parseInt(properties.getProperty("selenium.implicitWait")));
 		} catch (NumberFormatException e) {
@@ -358,7 +359,7 @@ public class SeleniumWebDriver {
 		if(this.seleniumProxy.get()!=null){
 			capabilities.setCapability(CapabilityType.PROXY, seleniumProxy.get());
 		}
-		System.setProperty("webdriver.gecko.driver", "./"+driverExeDirectory+"/geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "./"+driverExeDirectory+"/geckodriver.exe");
 		nativeWebDriver.set(new FirefoxDriver(capabilities));
 	}
 	private FirefoxProfile getFireFoxProfile() {

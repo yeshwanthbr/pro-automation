@@ -1,6 +1,0 @@
-selenium.remoteUrl=
-selenium.browser=FIREFOX
-selenium.browserVersion=
-selenium.operatingSystem=
-selenium.implicitWait=10
-selenium.takeScreenshotOnException=true
